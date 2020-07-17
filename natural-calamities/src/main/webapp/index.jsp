@@ -32,7 +32,6 @@
 	<div>
 		<div class="container">
 			<form action="register.doc" method="post">
-
 				<div class="form-group" col-sm-3>
 					<label for="place"></label> <input name="place" type="text"
 						class="form-control" placeholder="Placename" id="PLACENAME">
