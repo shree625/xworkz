@@ -26,7 +26,6 @@
 		<property name="username" value="${dataSource.username}"></property>
 		<property name="password" value="${dataSource.password}"></property>
 	</bean>
-	
 	 <bean
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
 		id="localSessionFactoryBean">
