@@ -15,7 +15,7 @@ public class CalamityServiceimpl implements CalamityService {
 	public CalamityServiceimpl() {
 		System.out.println("Created CalamityServiceimpl\t" + this.getClass().getSimpleName());
 	}
-
+	
 	public int validateAndSave(CalamityEntity calamityEntity) {
 
 		System.out.println("Start: validateSave" + calamityEntity);
