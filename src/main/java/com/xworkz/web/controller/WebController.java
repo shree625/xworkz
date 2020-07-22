@@ -4,7 +4,6 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-//import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.xworkz.web.dto.EMailDTO;
@@ -30,8 +29,9 @@ public class WebController {
 				logger.info("MailId: " + dto.getMail());
 				logger.info("Subject: " + dto.getSubject());
 				logger.info("Body: " + dto.getBody());
+				logger.info("calling the service method in controller");
 				 webService.fillForm(dto);
-				logger.info("successfully done");
+				logger.info("successfully filled all the details");
 				return "/index.jsp";
 				
 		} catch (Exception e) {
