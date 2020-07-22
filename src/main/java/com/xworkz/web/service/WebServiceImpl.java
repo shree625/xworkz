@@ -16,11 +16,12 @@ public class WebServiceImpl implements WebService {
 
 	public void fillForm(EMailDTO emailDto){
 		try {
-			logger.info("webservice method started");
+			logger.info("fill form method started");
+			logger.info("checking that dto should not be equal to null");
 				if (emailDto!=null) {
-					logger.info("emailDto not null");
+					logger.warn("emailDto should not be null");
 				}else {
-					logger.warn("emailDto is  null");
+					logger.error("emailDto is  null");
 				}
 
 		} catch (Exception e) {
