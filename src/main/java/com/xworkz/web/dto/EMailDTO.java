@@ -55,7 +55,6 @@ public class EMailDTO implements Serializable {
 	public void setBody(String body) {
 		this.body = body;
 	}
-
 }
 
 
